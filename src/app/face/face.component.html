@@ -1,0 +1,15 @@
+<div class="face-card" [ngClass]="{ snapped: this.snapmsg == 'Don\'t Snap!'}">
+  <h2>{{ faceSnap.title | titlecase}}</h2>
+  <hr>
+  <img [src] ="faceSnap.imageUrl" [alt]="faceSnap.title">
+  <p>{{ faceSnap.description }}</p>
+  <p *ngIf="faceSnap.location">Location : {{ faceSnap.location}}</p>
+  <hr>
+  <p>{{faceSnap.createDate | date}}</p>
+  <p>
+    <button (click)="onSnap()">{{ snapmsg }} </button>
+    <span [ngStyle] ="{color: 'rgb(0, ' + faceSnap.snaps*100 + ', 0 '}">{{ faceSnap.snaps }} </span>
+  </p>
+  <p> {{ 78312738.3827 | number: '1.0-1'}}</p>
+</div>
+

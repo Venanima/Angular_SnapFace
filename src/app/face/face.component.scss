@@ -1,0 +1,41 @@
+.face-card{
+  width: 80%;
+  height: 550px;
+  background: cornflowerblue;
+  padding: 10px 30px;
+  margin: 20px;
+  box-shadow: royalblue 20px 20px 28px;
+
+  img{
+    // Display + margin auto pour center une image
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    // Set le max width et height
+    width: 400px;
+    height: 300px;
+    // Fait qu'il respect sont ratio et le max
+    object-fit: contain;
+  }
+
+  button{
+    background-color: transparent;
+    box-sizing: border-box;
+    border: none;
+    box-shadow: lightblue 3px 3px 7px;
+    margin-right: 20px;
+    outline: none;
+    font-size: 14px;
+    font-weight: 500;
+    &:active {
+      transform: translate(1px, 1px);
+      box-shadow: lightblue 0 0 5px;
+    }
+  }
+}
+
+.snapped{
+  background-color: rgba(blue, .3);
+  color: white;
+}
