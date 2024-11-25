@@ -1,5 +1,9 @@
 # Snap
 
+Projet de test de Angular.
+Affichage d'une liste de 'Snap' composé d'une image, description, date et d'un nombre de like.
+Il est aussi possible de crée des Snaps.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.3.
 
 ## Development server
