@@ -10,6 +10,6 @@
     <button (click)="onSnap()">{{ snapmsg }} </button>
     <span [ngStyle] ="{color: 'rgb(0, ' + faceSnap.snaps*100 + ', 0 '}">{{ faceSnap.snaps }} </span>
   </p>
-  <button (click)="onViewSnap()">View</button>
+  <a routerLink="/snap">Back</a>
 </div>
 
